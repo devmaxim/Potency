@@ -1,0 +1,232 @@
+body
+	margin: 0	
+	padding: 0
+	box-sizing: border-box 
+.header
+	background: grey url('../img/header-bg.jpg') center no-repeat
+	background-size: cover
+	height: 100%
+	width: 100%
+	z-index: 0
+	position: relative
+	padding: 30px 0 0 0
+	// Затемнение фона
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		left: 0	
+		top: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(0,0,0,.8) 
+		z-index: -1
+	&-text
+		text-align: center
+		color: white
+		margin-bottom: 50px
+		&__title
+			margin: 0
+			letter-spacing: 3px
+			font-size: 50px
+			text-transform: uppercase
+		&__subtitle
+			font-size: 15px
+			color: rgba(255,255,255,.8) 
+	&__content
+		display: flex
+		justify-content: space-around
+		align-items: center
+	&__image
+		display: flex
+		img
+			height: 440px
+	&__button
+		display: flex
+		justify-content: center
+		margin-top: 50px
+		img
+			height: 50px
+			
+
+
+.footer
+	padding: 30px
+	position: relative
+	display: flex
+	justify-content: space-between
+	align-items: center
+	&-form
+		display: flex
+		flex-direction: column
+		justify-content: flex-start
+		margin-left: 70px
+		border: 1px solid green
+		border-radius: 5px 
+		padding: 4px
+		h2
+			text-align: center
+			text-transform: uppercase
+		label
+			margin-bottom: 4px
+			font-weight: 600 
+		&__input
+			margin-bottom: 15px
+			padding: 10px
+			font-size: 15px
+			border-radius: 5px
+			border: 1px solid green
+			&:focus
+				outline: none 
+	&-price
+		display: block
+		span
+			display: block
+			font-size: 30px
+			text-decoration: line-through
+			color: #818181 
+		h3
+			font-size: 120px
+			color: #CE0000 
+			margin: 0
+		
+	&-clock
+		display: flex
+		flex-basis: 33%
+		margin: 0em
+		margin-right: 20px
+.form
+	&__button
+		border: none
+		background-color: red
+		color: black
+		border-radius: 20px 
+		padding: 18px
+		font-size: 18px
+		font-weight: 600 
+		text-align: center
+		margin-left: auto
+		margin-right: auto
+		margin-top: 10px
+		text-transform: uppercase
+		&:focus
+			outline: none
+	&_focus
+		margin-top: -10px
+		margin-bottom: 10px
+		margin-left: 5px
+		border: 1px solid green
+		width: 90px
+		text-align: center
+		border-radius: 5px 
+		background-color: green
+		color: #FFF
+		display: none
+		&-tel
+			margin-top: -10px
+			margin-bottom: 10px
+			margin-left: 5px
+			border: 1px solid green
+			width: 140px
+			text-align: center
+			border-radius: 5px 
+			background-color: green
+			color: #FFF
+			display: none
+			font-size: 14px
+		&-active
+			display: block
+			
+			
+.advantage
+	&s
+		background-color: #E4E4E4
+		text-align: center
+		padding: 30px 30px 60px 30px
+		h2
+			margin-top: 0
+			margin-bottom: 50px
+			display: inline-block
+			font-size: 40px
+			
+			
+	&-item
+		flex-basis: 25%
+		background-color: #FFF 
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		padding: 10px
+		box-shadow: 17px 8px 11px rgba(206,61,35,0.5)
+		span
+			font-weight: 600 
+			color: #FF2D2D 
+			font-size: 20px 
+			margin-bottom: 10px
+		p
+			padding-left: 15px
+			padding-right: 15px
+		&s
+			display: flex
+			flex-direction: row
+			justify-content: space-around
+
+.feedback
+	background-color: #E4E4E4
+	padding: 
+		top: 55px
+		bottom: 65px
+	border-top: 2px solid white
+	&-arrow
+		height: 80px
+		border: none
+		top: 50%
+		transform: translateY(-50%)
+		cursor: pointer
+		&_left
+			position: absolute
+			width: 10px
+			left: 10px
+			z-index: 2
+			background: transparent url('../img/feedback/feedback-arrow_left.png') center no-repeat
+		&_right
+			position: absolute
+			width: 10px
+			right: 10px
+			background: transparent url('../img/feedback/feedback-arrow_right.png') center no-repeat
+	&-slider
+		padding-left: 30px
+		padding-right: 30px
+		display: flex
+		margin: 30px
+		&__item
+			outline: none
+			&-content
+				display: flex
+				flex-direction: row
+				img
+					display: flex
+					margin: 0 auto
+				p
+					display: flex
+					-webkit-flex-basis: 30%
+					flex-basis: 40%
+					-webkit-align-items: center
+					align-items: center
+					margin: 0 auto
+	&__title
+		h2
+			font-size: 37px
+			font-weight: 700
+			line-height: 18px
+		position: relative
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 48px
+		padding-bottom: 20px
+	
+	
+
+
+
+@import 'media.sass'
